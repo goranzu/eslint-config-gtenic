@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-gtenic",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Eslint config",
   "main": "index.js",
   "author": "Goran Tenic",
