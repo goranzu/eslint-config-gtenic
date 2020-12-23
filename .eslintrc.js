@@ -13,8 +13,23 @@ module.exports = {
     "no-console": 1,
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
+    "prettier/prettier": [
+      "error",
+      {
+        trailingComma: "all",
+        endOfLine: "auto",
+      },
+    ],
   },
-  plugins: ["import", "jest", "react", "jsx-a11y", "react-hooks"],
+  plugins: [
+    "import",
+    "jest",
+    "react",
+    "jsx-a11y",
+    "react-hooks",
+    "prettier",
+    "html",
+  ],
   parser: "babel-eslint",
   parserOptions: {
     ecmaVersion: 2020,
@@ -24,7 +39,7 @@ module.exports = {
   env: { es6: true, browser: true, node: true, jest: true },
   settings: {
     jest: {
-      version: 26,
+      version: "detect",
     },
     react: {
       version: "detect",
